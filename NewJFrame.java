@@ -31,53 +31,56 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel10 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
+        showreceipt = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        Rcpt = new javax.swing.JTextArea();
         jPanel9 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         box1 = new javax.swing.JCheckBox();
-        jLabel1 = new javax.swing.JLabel();
+        t1 = new javax.swing.JLabel();
         q1 = new javax.swing.JTextField();
         box2 = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        q2 = new javax.swing.JTextField();
+        q3 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         box3 = new javax.swing.JCheckBox();
         box4 = new javax.swing.JCheckBox();
-        jTextField4 = new javax.swing.JTextField();
+        q4 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         box5 = new javax.swing.JCheckBox();
-        jTextField5 = new javax.swing.JTextField();
+        q5 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         box6 = new javax.swing.JCheckBox();
         jLabel6 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        q6 = new javax.swing.JTextField();
+        q7 = new javax.swing.JTextField();
         box7 = new javax.swing.JCheckBox();
         jLabel7 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        q8 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         box8 = new javax.swing.JCheckBox();
         box9 = new javax.swing.JCheckBox();
-        jTextField9 = new javax.swing.JTextField();
+        q9 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        q10 = new javax.swing.JTextField();
         box10 = new javax.swing.JCheckBox();
-        jCheckBox11 = new javax.swing.JCheckBox();
-        jTextField11 = new javax.swing.JTextField();
+        box11 = new javax.swing.JCheckBox();
+        q11 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
-        jCheckBox12 = new javax.swing.JCheckBox();
+        q12 = new javax.swing.JTextField();
+        box12 = new javax.swing.JCheckBox();
         jLabel12 = new javax.swing.JLabel();
-        jCheckBox13 = new javax.swing.JCheckBox();
+        box13 = new javax.swing.JCheckBox();
         jLabel13 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
-        jCheckBox14 = new javax.swing.JCheckBox();
-        jTextField14 = new javax.swing.JTextField();
+        q13 = new javax.swing.JTextField();
+        box14 = new javax.swing.JCheckBox();
+        q14 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
-        jCheckBox15 = new javax.swing.JCheckBox();
+        q15 = new javax.swing.JTextField();
+        box15 = new javax.swing.JCheckBox();
         jLabel15 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -85,20 +88,21 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
+        orderID = new javax.swing.JTextField();
+        tabno = new javax.swing.JTextField();
+        o_name = new javax.swing.JTextField();
         jTextField20 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jTextField17 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
+        bill_show = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         printBTN = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -122,20 +126,36 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(0, 204, 204));
         jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
 
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
+        showreceipt.setBackground(new java.awt.Color(255, 255, 255));
+
+        Rcpt.setEditable(false);
+        Rcpt.setColumns(20);
+        Rcpt.setRows(5);
+        jScrollPane1.setViewportView(Rcpt);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 309, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 247, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("Receipt", jPanel8);
+        javax.swing.GroupLayout showreceiptLayout = new javax.swing.GroupLayout(showreceipt);
+        showreceipt.setLayout(showreceiptLayout);
+        showreceiptLayout.setHorizontalGroup(
+            showreceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        showreceiptLayout.setVerticalGroup(
+            showreceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Receipt", showreceipt);
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -145,7 +165,7 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 247, Short.MAX_VALUE)
+            .addGap(0, 269, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Calculator", jPanel9);
@@ -176,7 +196,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Beef Burger");
+        t1.setText("Beef Burger");
 
         q1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,27 +220,105 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        box4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box4ActionPerformed(evt);
+            }
+        });
+
         jLabel4.setText("Zinger Burger");
+
+        box5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box5ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("Big Zinger Burger");
 
+        box6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box6ActionPerformed(evt);
+            }
+        });
+
         jLabel6.setText("Chicken Roll");
+
+        box7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box7ActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("Chicken Mayo Roll");
 
         jLabel8.setText("Chicken Special Roll");
 
+        box8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box8ActionPerformed(evt);
+            }
+        });
+
+        box9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box9ActionPerformed(evt);
+            }
+        });
+
         jLabel9.setText("Chicken Big Roll");
 
         jLabel10.setText("Chicken Broast 1/4");
 
+        box10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box10ActionPerformed(evt);
+            }
+        });
+
+        box11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box11ActionPerformed(evt);
+            }
+        });
+
         jLabel11.setText("Chicken Broast 1/2");
+
+        q12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                q12ActionPerformed(evt);
+            }
+        });
+
+        box12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box12ActionPerformed(evt);
+            }
+        });
 
         jLabel12.setText("Chicken Broast Full");
 
+        box13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box13ActionPerformed(evt);
+            }
+        });
+
         jLabel13.setText("Cold Drink 500ml");
 
+        box14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box14ActionPerformed(evt);
+            }
+        });
+
         jLabel14.setText("Cold Drink 1.5 litre");
+
+        box15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box15ActionPerformed(evt);
+            }
+        });
 
         jLabel15.setText("Mineral Water 500ml");
 
@@ -254,7 +352,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jCheckBox13)
+                                .addComponent(box13)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -262,7 +360,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(box1)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(t1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(box4)
                                         .addGap(18, 18, 18)
@@ -280,40 +378,40 @@ public class NewJFrame extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jCheckBox11)
+                                        .addComponent(box11)
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jCheckBox12)
+                                        .addComponent(box12)
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jCheckBox15)
+                                        .addComponent(box15)
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jCheckBox14)
+                                .addComponent(box14)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(8, 8, 8)))
                 .addGap(10, 10, 10)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(q1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q4, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q5, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q6, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q7, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q8, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q9, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q10, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q11, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q15, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q12, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q13, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(q14, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(124, 124, 124))
         );
         jPanel1Layout.setVerticalGroup(
@@ -322,79 +420,79 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box1)
-                    .addComponent(jLabel1)
+                    .addComponent(t1)
                     .addComponent(q1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box2)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box3)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box4)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box5)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box6)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box7)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box8)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box9)
                     .addComponent(jLabel9)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(box10)
                     .addComponent(jLabel10)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox11)
+                    .addComponent(box11)
                     .addComponent(jLabel11)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox12)
+                    .addComponent(box12)
                     .addComponent(jLabel12)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox13)
+                    .addComponent(box13)
                     .addComponent(jLabel13)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox14)
+                    .addComponent(box14)
                     .addComponent(jLabel14)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(q14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox15)
+                    .addComponent(box15)
                     .addComponent(jLabel15)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(1320, Short.MAX_VALUE))
+                    .addComponent(q15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 204, 204));
@@ -425,11 +523,17 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel17.setText("Table No ");
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel18.setText("Total Amount");
+        jLabel18.setText("Order ID");
 
-        jTextField19.addActionListener(new java.awt.event.ActionListener() {
+        orderID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField19ActionPerformed(evt);
+                orderIDActionPerformed(evt);
+            }
+        });
+
+        o_name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                o_nameActionPerformed(evt);
             }
         });
 
@@ -445,9 +549,9 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel17))
                 .addGap(44, 44, 44)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
-                    .addComponent(jTextField18)
-                    .addComponent(jTextField19))
+                    .addComponent(o_name, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                    .addComponent(tabno)
+                    .addComponent(orderID))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -456,14 +560,14 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(o_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tabno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(orderID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(4, 4, 4))
         );
@@ -535,7 +639,12 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(0, 204, 204));
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
 
-        jButton5.setText("Show Receipt");
+        bill_show.setText("Show Receipt");
+        bill_show.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bill_showActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Edit");
 
@@ -543,7 +652,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jButton8.setText("Settings");
 
-        printBTN.setText("Print Receipt");
+        printBTN.setText("MAKE ORDER");
         printBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 printBTNActionPerformed(evt);
@@ -554,19 +663,27 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jButton10.setText("Cancel");
 
+        jButton1.setText("PRINT RECEIPT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(printBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(printBTN, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
-                                .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(bill_show, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -579,8 +696,10 @@ public class NewJFrame extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(printBTN)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
+                    .addComponent(bill_show)
                     .addComponent(jButton6))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -591,7 +710,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jButton9)
                     .addComponent(jButton10))
                 .addGap(18, 18, 18)
-                .addComponent(printBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
         );
 
@@ -599,8 +718,18 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
 
         jButton4.setText("EXIT");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("HELP");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("ABOUT US");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -704,7 +833,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(984, Short.MAX_VALUE))
+                .addContainerGap(477, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -726,47 +855,372 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField17ActionPerformed
 
     private void printBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printBTNActionPerformed
-       String a;
-       int total;
-       try {
-            String url = "";
-            String username = "";
-            String password = "";
+      
+       String x,a=null;
+
+       int i=0,j=0,total,flag;
+            String databaseName = "shariq";
+            String user = "database";
+            String pass = "pakistan";            
+            try {
             
-            Connection con = DriverManager.getConnection(url,username,password);
-            Statement stmt = con.createStatement();
             if(box1==null)
             {
-              a=q1.getText();  
-              String temp = "Select price from ";
-              int i = Integer.parseInt(a);
-              int j = Integer.parseInt(temp);
-              total= i * j;
-              
+            String temp = "Select price from item where id=1";
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            a=q1.getText();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Beef Burger";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
             }
-            //box1.setCursor(null);
+            }
+            if(box2==null)
+            {
+            String temp = "Select PRICE from item where id=2";
+            a=q2.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken Burger";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }}
+        if(box3==null)
+            {
+            String temp = "Select PRICE from item where id=3";
+            a=q3.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken Cheese Burger";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+            }
+            }
+        if(box4==null)
+            {
+            String temp = "Select PRICE from ITEM where id=4";
+            a=q4.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Zinger Burger";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+            }
+            }
+        if(box5==null)
+            {
+            String temp = "Select PRICE from ITEM where id=5";
+            a=q5.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Big Zinger Burger";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             }
+            }
+        if(box6==null)
+            {
+            String temp = "Select PRICE from ITEM where id=6";
+            a=q6.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken Roll";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }
+            }
+        if(box7==null)
+            {String temp = "Select PRICE from ITEM where id=7";
+            a=q7.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken MAYO ROLL";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+            }
+            }
+        if(box8==null)
+            {String temp = "Select PRICE from ITEM where id=8";
+            a=q8.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken Special Roll";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }}
+        if(box9==null)
+            {
+                String temp = "Select PRICE from ITEM where id=9";
+            a=q9.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken Big Roll";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }
+            }
+        if(box10==null)
+            {String temp = "Select PRICE from ITEM where id=10";
+            a=q10.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken Broast 1/4";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }}
+        if(box11==null)
+            {
+            String temp = "Select PRICE from ITEM where id=11";
+            a=q11.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken Broast 1/2";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }}
+        if(box12==null)
+            {
+            String temp = "Select PRICE from ITEM where id=12";
+            a=q12.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Chicken Broast Full";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }}
+        if(box13==null)
+            {
+            String temp = "Select PRICE from ITEM where id=13";
+            a=q13.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Cold Drink 500ml";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }}
+        if(box14==null)
+            {
+            String temp = "Select PRICE from ITEM where id=14";
+            a=q14.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Cold Drink 1.5 litre";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+             
+            }}
+        if(box15==null)
+            {
+            String temp = "Select PRICE from ITEM where id=15";
+            a=q15.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(temp);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    x = rs.getString("price");
+                    i = Integer.parseInt(a);
+                    j = Integer.parseInt(x);
+                Statement s = myConn.createStatement();
+                String a2 = orderID.getText();
+                int i1 = Integer.parseInt(a2);
+                String t = "Cold Drink 500ml";
+                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                s.execute(ad); 
+            }
+            }
+        JOptionPane.showMessageDialog(null,"SUCCESSFULLY ORDERED");
+        
+        q1.setText(null);
+        q2.setText(null);
+        q3.setText(null);
+        q4.setText(null);
+        q5.setText(null);
+        q6.setText(null);
+        q7.setText(null);
+        q8.setText(null);
+        q9.setText(null);
+        q10.setText(null);
+        q11.setText(null);
+        q12.setText(null);
+        q13.setText(null);
+        q14.setText(null);
+        q15.setText(null);
+        orderID.setText(null);
             
-            
-            
+            }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null,"Error");
         }
-        catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,ex.toString());
-        }
+       
+       
         
         
         
     }//GEN-LAST:event_printBTNActionPerformed
 
-    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
+    private void orderIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField19ActionPerformed
+        
+    }//GEN-LAST:event_orderIDActionPerformed
 
     private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField20ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+                JOptionPane.showMessageDialog(null,"We Are the Desktop Applications Developer ");
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void box1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box1ActionPerformed
@@ -787,6 +1241,123 @@ public class NewJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_q1ActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+
+        System.exit(0);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    JOptionPane.showMessageDialog(null,"KINDLY GO TO MAIN REPOSITORY AND OPEN HELP.TXT FILE & READ IT CAREFULLY");
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void box10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box10ActionPerformed
+        // TODO add your handling code here:
+        box10=null;
+    }//GEN-LAST:event_box10ActionPerformed
+
+    private void box4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box4ActionPerformed
+        // TODO add your handling code here:
+        box4=null;
+    }//GEN-LAST:event_box4ActionPerformed
+
+    private void box5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box5ActionPerformed
+        // TODO add your handling code here:
+        box5=null;
+    }//GEN-LAST:event_box5ActionPerformed
+
+    private void box6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box6ActionPerformed
+        // TODO add your handling code here:
+        box6=null;
+    }//GEN-LAST:event_box6ActionPerformed
+
+    private void box7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box7ActionPerformed
+        // TODO add your handling code here:
+        box7=null;
+    }//GEN-LAST:event_box7ActionPerformed
+
+    private void box8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box8ActionPerformed
+        // TODO add your handling code here:
+        box8=null;
+    }//GEN-LAST:event_box8ActionPerformed
+
+    private void box9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box9ActionPerformed
+        // TODO add your handling code here:
+        box9=null;
+    }//GEN-LAST:event_box9ActionPerformed
+
+    private void box11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box11ActionPerformed
+        // TODO add your handling code here:
+        box11=null;
+    }//GEN-LAST:event_box11ActionPerformed
+
+    private void box12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box12ActionPerformed
+        // TODO add your handling code here:
+        box12=null;
+    }//GEN-LAST:event_box12ActionPerformed
+
+    private void box13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box13ActionPerformed
+        // TODO add your handling code here:
+        box13=null;
+    }//GEN-LAST:event_box13ActionPerformed
+
+    private void box14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box14ActionPerformed
+        // TODO add your handling code here:
+        box14=null;
+    }//GEN-LAST:event_box14ActionPerformed
+
+    private void box15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box15ActionPerformed
+        // TODO add your handling code here:
+        box15=null;
+    }//GEN-LAST:event_box15ActionPerformed
+
+    private void bill_showActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bill_showActionPerformed
+        // TODO add your handling code here:
+        Rcpt.setText("\t*ABC FAST FOOD & RESTAURANT*\n\nName : "+o_name.getText()+"\nTable No : "+tabno.getText()+"\nOrder ID"+orderID.getText());
+            String databaseName = "shariq";
+            String user = "database";
+            String pass = "pakistan";
+            String a2 = orderID.getText();
+            int i1 = Integer.parseInt(a2);
+           
+            String query = "select item_name,quantity,price from all_sale where sid=i1";
+            try{
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement mystmt = myConn.createStatement();
+            PreparedStatement pst=myConn.prepareStatement(query);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                    //x = rs.getString("");
+                    //i = Integer.parseInt();
+                    //j = Integer.parseInt();
+                //Statement s = myConn.createStatement();
+                //String t = "Chicken Burger";
+                //String ad = "";
+                //s.execute(ad); 
+                Rcpt.setText("True");
+            } 
+            }
+            catch(Exception e){
+                JOptionPane.showMessageDialog(null,"BHUH");
+            }
+    }//GEN-LAST:event_bill_showActionPerformed
+
+    private void o_nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_o_nameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_o_nameActionPerformed
+
+    private void q12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_q12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_q12ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+    private void showRActionPerformed(java.awt.event.ActionEvent evt){
+        
+    }
     /**
      * @param args the command line arguments
      */
@@ -823,8 +1394,15 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea Rcpt;
+    private javax.swing.JButton bill_show;
     private javax.swing.JCheckBox box1;
     private javax.swing.JCheckBox box10;
+    private javax.swing.JCheckBox box11;
+    private javax.swing.JCheckBox box12;
+    private javax.swing.JCheckBox box13;
+    private javax.swing.JCheckBox box14;
+    private javax.swing.JCheckBox box15;
     private javax.swing.JCheckBox box2;
     private javax.swing.JCheckBox box3;
     private javax.swing.JCheckBox box4;
@@ -833,21 +1411,15 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JCheckBox box7;
     private javax.swing.JCheckBox box8;
     private javax.swing.JCheckBox box9;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JCheckBox jCheckBox11;
-    private javax.swing.JCheckBox jCheckBox12;
-    private javax.swing.JCheckBox jCheckBox13;
-    private javax.swing.JCheckBox jCheckBox14;
-    private javax.swing.JCheckBox jCheckBox15;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -881,27 +1453,30 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
     private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField o_name;
+    private javax.swing.JTextField orderID;
     private javax.swing.JButton printBTN;
     private javax.swing.JTextField q1;
+    private javax.swing.JTextField q10;
+    private javax.swing.JTextField q11;
+    private javax.swing.JTextField q12;
+    private javax.swing.JTextField q13;
+    private javax.swing.JTextField q14;
+    private javax.swing.JTextField q15;
+    private javax.swing.JTextField q2;
+    private javax.swing.JTextField q3;
+    private javax.swing.JTextField q4;
+    private javax.swing.JTextField q5;
+    private javax.swing.JTextField q6;
+    private javax.swing.JTextField q7;
+    private javax.swing.JTextField q8;
+    private javax.swing.JTextField q9;
+    private javax.swing.JPanel showreceipt;
+    private javax.swing.JLabel t1;
+    private javax.swing.JTextField tabno;
     // End of variables declaration//GEN-END:variables
 }
