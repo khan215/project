@@ -97,11 +97,9 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         bill_show = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        Reset = new javax.swing.JButton();
         printBTN = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
@@ -121,16 +119,18 @@ public class NewJFrame extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1500, 750));
         setResizable(false);
 
-        jPanel10.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel10.setBackground(new java.awt.Color(204, 223, 248));
 
-        jPanel7.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jPanel7.setBackground(new java.awt.Color(191, 219, 255));
+        jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
 
         showreceipt.setBackground(new java.awt.Color(255, 255, 255));
 
         Rcpt.setEditable(false);
         Rcpt.setColumns(20);
         Rcpt.setRows(5);
+        Rcpt.setWrapStyleWord(true);
+        Rcpt.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
         jScrollPane1.setViewportView(Rcpt);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -187,8 +187,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jPanel1.setBackground(new java.awt.Color(191, 219, 255));
+        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
 
         box1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -495,8 +495,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jPanel2.setBackground(new java.awt.Color(191, 219, 255));
+        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -509,20 +509,23 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        jPanel4.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jPanel4.setBackground(new java.awt.Color(191, 219, 255));
+        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
 
-        jPanel6.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jPanel6.setBackground(new java.awt.Color(191, 219, 255));
+        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
         jPanel6.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(8, 55, 114));
         jLabel16.setText("Name ");
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(8, 55, 114));
         jLabel17.setText("Table No ");
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(8, 55, 114));
         jLabel18.setText("Order ID");
 
         orderID.addActionListener(new java.awt.event.ActionListener() {
@@ -573,11 +576,12 @@ public class NewJFrame extends javax.swing.JFrame {
         );
 
         jTextField20.setEditable(false);
-        jTextField20.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField20.setBackground(new java.awt.Color(191, 219, 255));
         jTextField20.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jTextField20.setForeground(new java.awt.Color(8, 55, 114));
         jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField20.setText("CUSTOMER's DETAIL");
-        jTextField20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jTextField20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
         jTextField20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField20ActionPerformed(evt);
@@ -605,14 +609,15 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGap(19, 19, 19))
         );
 
-        jPanel5.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jPanel5.setBackground(new java.awt.Color(191, 219, 255));
+        jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
 
         jTextField17.setEditable(false);
-        jTextField17.setBackground(new java.awt.Color(0, 204, 204));
+        jTextField17.setBackground(new java.awt.Color(191, 219, 255));
         jTextField17.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jTextField17.setForeground(new java.awt.Color(8, 55, 114));
         jTextField17.setText("                                                    ABC FAST FOOD & RESTAURANT");
-        jTextField17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jTextField17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
         jTextField17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField17ActionPerformed(evt);
@@ -636,8 +641,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jPanel3.setBackground(new java.awt.Color(191, 219, 255));
+        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
 
         bill_show.setText("Show Receipt");
         bill_show.addActionListener(new java.awt.event.ActionListener() {
@@ -646,11 +651,19 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setText("Edit");
+        jButton6.setText("Cancel Order");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
-        jButton7.setText("Reset");
-
-        jButton8.setText("Settings");
+        Reset.setText("Reset");
+        Reset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ResetActionPerformed(evt);
+            }
+        });
 
         printBTN.setText("MAKE ORDER");
         printBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -660,8 +673,6 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton9.setText("Help");
-
-        jButton10.setText("Cancel");
 
         jButton1.setText("PRINT RECEIPT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -680,42 +691,35 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(printBTN, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
-                                .addComponent(bill_show, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Reset, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
+                            .addComponent(bill_show, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
-                            .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(19, 19, 19))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(printBTN)
+                .addComponent(printBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bill_show, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bill_show)
-                    .addComponent(jButton6))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton9)
-                    .addComponent(jButton10))
+                    .addComponent(Reset, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
         );
 
-        jPanel11.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        jPanel11.setBackground(new java.awt.Color(191, 219, 255));
+        jPanel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
 
         jButton4.setText("EXIT");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -833,7 +837,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(477, Short.MAX_VALUE))
+                .addContainerGap(481, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -857,13 +861,14 @@ public class NewJFrame extends javax.swing.JFrame {
     private void printBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printBTNActionPerformed
       
        String x,a=null;
+            
 
        int z=0,i=0,j=0,total,flag;
             String databaseName = "shariq";
             String user = "database";
             String pass = "pakistan";            
-            try {
             
+            try {
             if(box1==null)
             {
             String temp = "Select price from item where id=1";
@@ -878,6 +883,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     i = Integer.parseInt(a);
                     j = Integer.parseInt(x);
                 Statement s = myConn.createStatement();
+                
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Beef Burger";
@@ -1179,25 +1185,28 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
             }
             }
+        
+              
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection my = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            Statement s1 = my.createStatement();
+            String a1,b1,c1,d1;
+            a1 = o_name.getText();
+            b1=orderID.getText();
+            int k = Integer.parseInt(b1);
+            c1 = tabno.getText();
+            int m = Integer.parseInt(c1);
+            String v = "dawood";
+            String d = "Insert into all_orders values("+k+",'"+a1+"',"+m+",'"+v+"')";
+            s1.execute(d);
+            
+          
+         
         JOptionPane.showMessageDialog(null,"SUCCESSFULLY ORDERED");
-        /*
-        q1.setText(null);
-        q2.setText(null);
-        q3.setText(null);
-        q4.setText(null);
-        q5.setText(null);
-        q6.setText(null);
-        q7.setText(null);
-        q8.setText(null);
-        q9.setText(null);
-        q10.setText(null);
-        q11.setText(null);
-        q12.setText(null);
-        q13.setText(null);
-        q14.setText(null);
-        q15.setText(null);
-        orderID.setText(null);
-         */   
+            
+        
+               
+         
             }
         catch(Exception e){
             JOptionPane.showMessageDialog(null,"Error");
@@ -1225,16 +1234,19 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void box1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box1ActionPerformed
         box1=null;
+        
     }//GEN-LAST:event_box1ActionPerformed
 
     private void box2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box2ActionPerformed
         // TODO add your handling code here:
-        box2=null;
+        box2.setSelected(true);
+        
     }//GEN-LAST:event_box2ActionPerformed
 
     private void box3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box3ActionPerformed
         // TODO add your handling code here:
-        box3=null;
+        box3.setSelected(true);
+        
     }//GEN-LAST:event_box3ActionPerformed
 
     private void q1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_q1ActionPerformed
@@ -1254,62 +1266,74 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void box10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box10ActionPerformed
         // TODO add your handling code here:
-        box10=null;
+        box10.setSelected(true);
+        
     }//GEN-LAST:event_box10ActionPerformed
 
     private void box4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box4ActionPerformed
         // TODO add your handling code here:
-        box4=null;
+        box4.setSelected(true);
+        
     }//GEN-LAST:event_box4ActionPerformed
 
     private void box5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box5ActionPerformed
         // TODO add your handling code here:
-        box5=null;
+        box5.setSelected(true);
+        
     }//GEN-LAST:event_box5ActionPerformed
 
     private void box6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box6ActionPerformed
         // TODO add your handling code here:
-        box6=null;
+        box6.setSelected(true);
+        
     }//GEN-LAST:event_box6ActionPerformed
 
     private void box7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box7ActionPerformed
         // TODO add your handling code here:
-        box7=null;
+        box7.setSelected(true);
+        
     }//GEN-LAST:event_box7ActionPerformed
 
     private void box8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box8ActionPerformed
         // TODO add your handling code here:
-        box8=null;
+        box8.setSelected(true);
+        
     }//GEN-LAST:event_box8ActionPerformed
 
     private void box9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box9ActionPerformed
         // TODO add your handling code here:
-        box9=null;
+        box9.setSelected(true);
+        
     }//GEN-LAST:event_box9ActionPerformed
 
     private void box11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box11ActionPerformed
         // TODO add your handling code here:
-        box11=null;
+        box11.setSelected(true);
+        
     }//GEN-LAST:event_box11ActionPerformed
 
     private void box12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box12ActionPerformed
         // TODO add your handling code here:
-        box12=null;
+        box12.setSelected(true);
+        
     }//GEN-LAST:event_box12ActionPerformed
 
     private void box13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box13ActionPerformed
         // TODO add your handling code here:
-        box13=null;
+        box13.setSelected(true);
+        
     }//GEN-LAST:event_box13ActionPerformed
 
     private void box14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box14ActionPerformed
         // TODO add your handling code here:
-        box14=null;
+        box14.setSelected(true);
+        
     }//GEN-LAST:event_box14ActionPerformed
 
     private void box15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box15ActionPerformed
         // TODO add your handling code here:
-        box15=null;
+        box15.setSelected(true);
+        
     }//GEN-LAST:event_box15ActionPerformed
 
     private void bill_showActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bill_showActionPerformed
@@ -1319,26 +1343,21 @@ public class NewJFrame extends javax.swing.JFrame {
             String pass = "pakistan";
             String a2 = orderID.getText();
             int i1 = Integer.parseInt(a2);
-            String [] array = new String[5];
-            //String temp = "select * from all_sale where sid = "+i1+"";
+            int total=0;
+            String x=null;
             try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
-            //Statement mystmt = myConn.createStatement();
-            //PreparedStatement pst=myConn.prepareStatement(temp);
-            //ResultSet rs = pst.executeQuery();
             Statement mystmt = myConn.createStatement();
             ResultSet myRS = mystmt.executeQuery("Select * from all_sale where sid='"+i1+"'");
-            
-            Rcpt.setText("*********************ABC FAST FOOD**************\n\nNAME : "+o_name.getText()+"\nTable No : "+tabno.getText()+"\nOrder ID"+orderID.getText()+"\n");
+            Rcpt.setText("*********************ABC FAST FOOD******************\n\nNAME : "+o_name.getText()+"\nTable No : "+tabno.getText()+"\nOrder ID : "+orderID.getText()+"\n\n*********************************************************\n");
             while(myRS.next()){
-                Rcpt.append(" "+ myRS.getString("quantity") + "  "+ myRS.getString("item_name") + "  "+ myRS.getString("price") + "\n");
-
-                
-            //Rcpt.setText("           *ABC FAST FOOD & RESTAURANT*\n\nName : "+o_name.getText()+"\nTable No : "+tabno.getText()+"\nOrder ID"+orderID.getText()+"\n"+(myRS.getString("quantity"))+"    "+(myRS.getString("item_name"))+(myRS.getString("price"))+"count"+z1);                                           
-                
+            x =myRS.getString("price");
+            int x1 = Integer.parseInt(x);
+            total = total + x1;
+            Rcpt.append(" "+ myRS.getString("quantity") + "  "+ myRS.getString("item_name") + "  "+ myRS.getString("price") + "\n");
             }
-            
+            Rcpt.append("\n Total Price : "+total);
             }
             catch(Exception e){
                 JOptionPane.showMessageDialog(null,"BHUH");
@@ -1355,8 +1374,43 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void ResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ResetActionPerformed
+        res();
+    }//GEN-LAST:event_ResetActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+       
+        res();
+    }//GEN-LAST:event_jButton6ActionPerformed
     private void showRActionPerformed(java.awt.event.ActionEvent evt){
+    }
+    public void res(){
+        
+        box1.setSelected(false);
+        Rcpt.setText(null);
+        o_name.setText(null);
+        orderID.setText(null);
+        tabno.setText(null);
+        q1.setText(null);
+        q2.setText(null);
+        q3.setText(null);
+        q4.setText(null);
+        q5.setText(null);
+        q6.setText(null);
+        q7.setText(null);
+        q8.setText(null);
+        q9.setText(null);
+        q10.setText(null);
+        q11.setText(null);
+        q12.setText(null);
+        q13.setText(null);
+        q14.setText(null);
+        q15.setText(null);
+        orderID.setText(null);
         
     }
     /**
@@ -1396,6 +1450,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea Rcpt;
+    private javax.swing.JButton Reset;
     private javax.swing.JButton bill_show;
     private javax.swing.JCheckBox box1;
     private javax.swing.JCheckBox box10;
@@ -1413,13 +1468,10 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JCheckBox box8;
     private javax.swing.JCheckBox box9;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
