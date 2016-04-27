@@ -858,7 +858,7 @@ public class NewJFrame extends javax.swing.JFrame {
       
        String x,a=null;
 
-       int i=0,j=0,total,flag;
+       int z=0,i=0,j=0,total,flag;
             String databaseName = "shariq";
             String user = "database";
             String pass = "pakistan";            
@@ -881,7 +881,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Beef Burger";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }
@@ -903,7 +903,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken Burger";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }}
@@ -924,7 +924,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken Cheese Burger";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
             }
             }
@@ -945,7 +945,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Zinger Burger";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
             }
             }
@@ -966,7 +966,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Big Zinger Burger";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              }
             }
@@ -987,7 +987,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken Roll";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }
@@ -1008,7 +1008,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken MAYO ROLL";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
             }
             }
@@ -1028,7 +1028,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken Special Roll";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }}
@@ -1049,7 +1049,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken Big Roll";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }
@@ -1070,7 +1070,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken Broast 1/4";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }}
@@ -1091,7 +1091,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken Broast 1/2";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }}
@@ -1112,7 +1112,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Chicken Broast Full";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }}
@@ -1133,7 +1133,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Cold Drink 500ml";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }}
@@ -1154,7 +1154,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Cold Drink 1.5 litre";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
              
             }}
@@ -1175,12 +1175,12 @@ public class NewJFrame extends javax.swing.JFrame {
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Cold Drink 500ml";
-                String ad = "INSERT into all_sale values('"+t+"',"+i*j+","+i1+","+i+")";
+                String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
             }
             }
         JOptionPane.showMessageDialog(null,"SUCCESSFULLY ORDERED");
-        
+        /*
         q1.setText(null);
         q2.setText(null);
         q3.setText(null);
@@ -1197,7 +1197,7 @@ public class NewJFrame extends javax.swing.JFrame {
         q14.setText(null);
         q15.setText(null);
         orderID.setText(null);
-            
+         */   
             }
         catch(Exception e){
             JOptionPane.showMessageDialog(null,"Error");
@@ -1314,30 +1314,31 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void bill_showActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bill_showActionPerformed
         // TODO add your handling code here:
-        Rcpt.setText("\t*ABC FAST FOOD & RESTAURANT*\n\nName : "+o_name.getText()+"\nTable No : "+tabno.getText()+"\nOrder ID"+orderID.getText());
             String databaseName = "shariq";
             String user = "database";
             String pass = "pakistan";
             String a2 = orderID.getText();
             int i1 = Integer.parseInt(a2);
-           
-            String query = "select item_name,quantity,price from all_sale where sid=i1";
+            String [] array = new String[5];
+            //String temp = "select * from all_sale where sid = "+i1+"";
             try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
+            //Statement mystmt = myConn.createStatement();
+            //PreparedStatement pst=myConn.prepareStatement(temp);
+            //ResultSet rs = pst.executeQuery();
             Statement mystmt = myConn.createStatement();
-            PreparedStatement pst=myConn.prepareStatement(query);
-            ResultSet rs = pst.executeQuery();
-            if(rs.next()){
-                    //x = rs.getString("");
-                    //i = Integer.parseInt();
-                    //j = Integer.parseInt();
-                //Statement s = myConn.createStatement();
-                //String t = "Chicken Burger";
-                //String ad = "";
-                //s.execute(ad); 
-                Rcpt.setText("True");
-            } 
+            ResultSet myRS = mystmt.executeQuery("Select * from all_sale where sid='"+i1+"'");
+            
+            Rcpt.setText("*********************ABC FAST FOOD**************\n\nNAME : "+o_name.getText()+"\nTable No : "+tabno.getText()+"\nOrder ID"+orderID.getText()+"\n");
+            while(myRS.next()){
+                Rcpt.append(" "+ myRS.getString("quantity") + "  "+ myRS.getString("item_name") + "  "+ myRS.getString("price") + "\n");
+
+                
+            //Rcpt.setText("           *ABC FAST FOOD & RESTAURANT*\n\nName : "+o_name.getText()+"\nTable No : "+tabno.getText()+"\nOrder ID"+orderID.getText()+"\n"+(myRS.getString("quantity"))+"    "+(myRS.getString("item_name"))+(myRS.getString("price"))+"count"+z1);                                           
+                
+            }
+            
             }
             catch(Exception e){
                 JOptionPane.showMessageDialog(null,"BHUH");
