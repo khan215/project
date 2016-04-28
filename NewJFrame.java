@@ -83,6 +83,7 @@ public class NewJFrame extends javax.swing.JFrame {
         box15 = new javax.swing.JCheckBox();
         jLabel15 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
@@ -498,15 +499,23 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(191, 219, 255));
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(101, 147, 207), 3, true));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/b.jpg"))); // NOI18N
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 257, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(13, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel4.setBackground(new java.awt.Color(191, 219, 255));
@@ -751,7 +760,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(236, 236, 236)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 257, Short.MAX_VALUE)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(117, 117, 117))
         );
@@ -778,14 +787,14 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGroup(jPanel10Layout.createSequentialGroup()
                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(18, 18, 18)
                             .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addContainerGap()))
+                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGap(18, 18, 18)
+                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(25, 25, 25)))
                     .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel10Layout.setVerticalGroup(
@@ -837,7 +846,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(481, Short.MAX_VALUE))
+                .addContainerGap(466, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -869,7 +878,7 @@ public class NewJFrame extends javax.swing.JFrame {
             String pass = "pakistan";            
             
             try {
-            if(box1==null)
+            if(box1.isSelected())
             {
             String temp = "Select price from item where id=1";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -892,7 +901,7 @@ public class NewJFrame extends javax.swing.JFrame {
              
             }
             }
-            if(box2==null)
+            if(box2.isSelected())
             {
             String temp = "Select PRICE from item where id=2";
             a=q2.getText();
@@ -913,7 +922,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
              
             }}
-        if(box3==null)
+        if(box3.isSelected())
             {
             String temp = "Select PRICE from item where id=3";
             a=q3.getText();
@@ -934,7 +943,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
             }
             }
-        if(box4==null)
+        if(box4.isSelected())
             {
             String temp = "Select PRICE from ITEM where id=4";
             a=q4.getText();
@@ -955,7 +964,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
             }
             }
-        if(box5==null)
+        if(box5.isSelected())
             {
             String temp = "Select PRICE from ITEM where id=5";
             a=q5.getText();
@@ -976,7 +985,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
              }
             }
-        if(box6==null)
+        if(box6.isSelected())
             {
             String temp = "Select PRICE from ITEM where id=6";
             a=q6.getText();
@@ -998,7 +1007,7 @@ public class NewJFrame extends javax.swing.JFrame {
              
             }
             }
-        if(box7==null)
+        if(box7.isSelected())
             {String temp = "Select PRICE from ITEM where id=7";
             a=q7.getText();
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -1018,7 +1027,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
             }
             }
-        if(box8==null)
+        if(box8.isSelected())
             {String temp = "Select PRICE from ITEM where id=8";
             a=q8.getText();
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -1038,7 +1047,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
              
             }}
-        if(box9==null)
+        if(box9.isSelected())
             {
                 String temp = "Select PRICE from ITEM where id=9";
             a=q9.getText();
@@ -1060,7 +1069,7 @@ public class NewJFrame extends javax.swing.JFrame {
              
             }
             }
-        if(box10==null)
+        if(box10.isSelected())
             {String temp = "Select PRICE from ITEM where id=10";
             a=q10.getText();
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -1080,7 +1089,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
              
             }}
-        if(box11==null)
+        if(box11.isSelected())
             {
             String temp = "Select PRICE from ITEM where id=11";
             a=q11.getText();
@@ -1101,7 +1110,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
              
             }}
-        if(box12==null)
+        if(box12.isSelected())
             {
             String temp = "Select PRICE from ITEM where id=12";
             a=q12.getText();
@@ -1122,7 +1131,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
              
             }}
-        if(box13==null)
+        if(box13.isSelected())
             {
             String temp = "Select PRICE from ITEM where id=13";
             a=q13.getText();
@@ -1143,7 +1152,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
              
             }}
-        if(box14==null)
+        if(box14.isSelected())
             {
             String temp = "Select PRICE from ITEM where id=14";
             a=q14.getText();
@@ -1164,7 +1173,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 s.execute(ad); 
              
             }}
-        if(box15==null)
+        if(box15.isSelected())
             {
             String temp = "Select PRICE from ITEM where id=15";
             a=q15.getText();
@@ -1233,7 +1242,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void box1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box1ActionPerformed
-        box1=null;
+        box1.setSelected(true);
         
     }//GEN-LAST:event_box1ActionPerformed
 
@@ -1391,6 +1400,21 @@ public class NewJFrame extends javax.swing.JFrame {
     public void res(){
         
         box1.setSelected(false);
+        box2.setSelected(false);
+        box3.setSelected(false);
+        box4.setSelected(false);
+        box5.setSelected(false);
+        box6.setSelected(false);
+        box7.setSelected(false);
+        box8.setSelected(false);
+        box9.setSelected(false);
+        box10.setSelected(false);
+        box11.setSelected(false);
+        box12.setSelected(false);
+        box13.setSelected(false);
+        box14.setSelected(false);
+        box15.setSelected(false);
+        
         Rcpt.setText(null);
         o_name.setText(null);
         orderID.setText(null);
@@ -1473,6 +1497,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
