@@ -108,8 +108,8 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -682,6 +682,11 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton9.setText("Help");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("PRINT RECEIPT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -820,6 +825,14 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jMenu1.setText("File");
 
+        jMenuItem2.setText("Help");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
+
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
         jMenuItem1.setText("Close");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -828,9 +841,6 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
         jMenu1.add(jMenuItem1);
-
-        jMenuItem2.setText("jMenuItem2");
-        jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
 
@@ -861,6 +871,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
@@ -876,10 +887,11 @@ public class NewJFrame extends javax.swing.JFrame {
             String databaseName = "shariq";
             String user = "database";
             String pass = "pakistan";            
-            
+            int p1=0;
             try {
             if(box1.isSelected())
             {
+                
             String temp = "Select price from item where id=1";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection myConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
@@ -892,12 +904,30 @@ public class NewJFrame extends javax.swing.JFrame {
                     i = Integer.parseInt(a);
                     j = Integer.parseInt(x);
                 Statement s = myConn.createStatement();
-                
+                Statement w=myConn.createStatement();
                 String a2 = orderID.getText();
                 int i1 = Integer.parseInt(a2);
                 String t = "Beef Burger";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
              
             }
             }
@@ -920,6 +950,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Chicken Burger";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=2";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=2";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
              
             }}
         if(box3.isSelected())
@@ -941,6 +990,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Chicken Cheese Burger";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=2";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=2";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
             }
             }
         if(box4.isSelected())
@@ -962,6 +1030,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Zinger Burger";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
             }
             }
         if(box5.isSelected())
@@ -983,6 +1070,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Big Zinger Burger";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
              }
             }
         if(box6.isSelected())
@@ -1025,6 +1131,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Chicken MAYO ROLL";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
             }
             }
         if(box8.isSelected())
@@ -1045,6 +1170,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Chicken Special Roll";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
              
             }}
         if(box9.isSelected())
@@ -1066,6 +1210,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Chicken Big Roll";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
              
             }
             }
@@ -1087,6 +1250,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Chicken Broast 1/4";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 1 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
              
             }}
         if(box11.isSelected())
@@ -1108,6 +1290,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Chicken Broast 1/2";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 2 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
              
             }}
         if(box12.isSelected())
@@ -1129,6 +1330,25 @@ public class NewJFrame extends javax.swing.JFrame {
                 String t = "Chicken Broast Full";
                 String ad = "INSERT into all_sale values('"+t+"',"+i+","+i*j+","+i1+")";
                 s.execute(ad); 
+                String query2 = "select * from stock where id=1";
+                Statement st=myConn.createStatement();
+                PreparedStatement pst2=myConn.prepareStatement(query2);
+                ResultSet rs2 = pst2.executeQuery();
+                
+                if(rs2.next()){
+                    String p=rs2.getString("Quantity");
+                    p1 = Integer.parseInt(p);
+                    p1 = p1 - 4 ;
+                    Statement stck = myConn.createStatement();
+                    if(p1>0){
+                    String stock_query="update stock set Quantity="+p1+" where id=1";
+                    stck.execute(stock_query);
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null,"OUT OF STOCK");
+                        res();
+                    }
+                }
              
             }}
         if(box13.isSelected())
@@ -1195,7 +1415,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             }
         
-              
+        if(p1>0){
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection my = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName="+databaseName+";user="+user+";password="+pass);
             Statement s1 = my.createStatement();
@@ -1212,7 +1432,7 @@ public class NewJFrame extends javax.swing.JFrame {
           
          
         JOptionPane.showMessageDialog(null,"SUCCESSFULLY ORDERED");
-            
+        }    
         
                
          
@@ -1237,7 +1457,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField20ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-                JOptionPane.showMessageDialog(null,"We Are the Desktop Applications Developer ");
+                JOptionPane.showMessageDialog(null,"This Inventory System is designed by the Students\n of Computer Engineering Department of Sir Syed University of Engineering & Technology.\n\n\tRoll No : 2014-CE-002\n\tRoll No : 014-CE-200\n\tRoll No : 2014-CE-10");
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -1269,8 +1489,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    JOptionPane.showMessageDialog(null,"KINDLY GO TO MAIN REPOSITORY AND OPEN HELP.TXT FILE & READ IT CAREFULLY");
-
+    help();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void box10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box10ActionPerformed
@@ -1395,7 +1614,21 @@ public class NewJFrame extends javax.swing.JFrame {
        
         res();
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        help();
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        help();
+    }//GEN-LAST:event_jButton9ActionPerformed
     private void showRActionPerformed(java.awt.event.ActionEvent evt){
+    }
+    public void help(){
+        JOptionPane.showMessageDialog(null,"ABC INVENTORY SYSTEM is designed to help in maintaining the record of the customers ,\n Admin can view the whole sale or record which was maintained when making an order\n\nFor Further Contact : dawoodkhan215@gmail.com");
+        
     }
     public void res(){
         
